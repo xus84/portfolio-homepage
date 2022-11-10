@@ -7,7 +7,6 @@
   margin: 0;
   width: 100%vw;
   height: 100%vh;
-  background-color: black;
   font-family: Lato;
 }
 
@@ -20,9 +19,15 @@ nav {
   height: 50px;
 }
 
-img{
-        width: 1.3rem;
-        height: 1.3rem;
+body {
+  background-image: url(./img/6726661-min.jpg);
+  background-repeat: no-repeat;
+  opacity: 0.9;
+}
+
+img {
+  width: 1.3rem;
+  height: 1.3rem;
 }
 
 ul {
@@ -34,7 +39,7 @@ ul {
 
 a {
   text-decoration: none;
-  color:inherit;
+  color: inherit;
 }
 
 li {
@@ -88,61 +93,73 @@ h3 {
 }
 
 ul * {
-        box-sizing: border-box;
-        transition: all .35s ease;
-      }
-      
-       li {
-        display: inline-block;
-        list-style: outside none none;
-        margin: .4em 0.9em;
-        padding: 0;
-      }
-      
-       .about_effect, .contact_effect {
-        padding: .4em .7em;
-        position: relative;
-        text-decoration: none;
-        font-size: 20px;
-      }
-      
-       .about_effect::before, .contact_effect::before,
-       .about_effect::after, .contact_effect::after {
-        content: '';
-        height: 12px;
-        width: 12px;
-        position: absolute;
-        transition: all .35s ease;
-        opacity: 0;
-      }
-      
-       .about_effect::before, .contact_effect::before {
-        content: '';
-        right: 0;
-        top: 0;
-        border-top: 3px solid   #17514f;
-        border-right: 3px solid #17518f;
-        transform: translate(-100%, 50%);
-      }
-      
-      .about_effect::after, .contact_effect::after {
-        content: '';
-        left: 0;
-        bottom: 0;
-        border-bottom: 3px solid #17514f;
-        border-left: 3px solid #17518f;
-        transform: translate(100%, -50%)
-      }
-      
-      .about_effect:hover:before,
-      .about_effect:hover:after,
-      .contact_effect:hover:before,
-      .contact_effect:hover:after
-      {
-        transform: translate(0,0);
-        opacity: 1;
-      }
-      
-       .about_effect:hover, .contact_effect:hover {
-        color: rgb(213, 213, 246);
-      }
+  box-sizing: border-box;
+  transition: all 0.35s ease;
+}
+
+li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0.4em 0.9em;
+  padding: 0;
+}
+
+.about_effect,
+.contact_effect {
+  padding: 0.4em 0.7em;
+  position: relative;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.about_effect::before,
+.contact_effect::before,
+.about_effect::after,
+.contact_effect::after {
+  content: "";
+  height: 12px;
+  width: 12px;
+  position: absolute;
+  transition: all 0.35s ease;
+  opacity: 0;
+}
+
+.about_effect::before,
+.contact_effect::before {
+  content: "";
+  right: 0;
+  top: 0;
+  border-top: 3px solid #17514f;
+  border-right: 3px solid #17518f;
+  transform: translate(-100%, 50%);
+}
+
+.about_effect::after,
+.contact_effect::after {
+  content: "";
+  left: 0;
+  bottom: 0;
+  border-bottom: 3px solid #17514f;
+  border-left: 3px solid #17518f;
+  transform: translate(100%, -50%);
+}
+
+.about_effect:hover:before,
+.about_effect:hover:after,
+.contact_effect:hover:before,
+.contact_effect:hover:after {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
+.about_effect:hover,
+.contact_effect:hover {
+  color: rgb(213, 213, 246);
+}
+
+main {
+  overflow: hidden;
+  position: relative;
+}
+
+
